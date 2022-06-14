@@ -18,8 +18,8 @@ provided the modification does not alter it's relationship with another user's b
 No dependencies to access API, gmail account needed to register.
 
 #### Local run:
-Flask v. 2.1.0
-google-cloud-datastore v. 2.4.0
+* Flask v. 2.1.0
+* google-cloud-datastore v. 2.4.0
 
 ### Installing
 
