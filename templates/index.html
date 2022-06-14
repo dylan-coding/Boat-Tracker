@@ -1,0 +1,50 @@
+<!doctype html>
+<!--
+ Copyright 2021 Google LLC
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<html>
+<head>
+  <title>Welcome page</title>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+  <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <h1>Welcome!</h1>
+  <form action='https://smithdyl-cs493-final.wl.r.appspot.com/login/'>
+    <input type = 'hidden'
+           name = 'response_type'
+           value = 'code'>
+    <input type = 'hidden'
+           name = 'client_id'
+           value = '{{client_id}}'>
+    <input type = 'hidden'
+           name = 'redirect_uri'
+           value = '{{redirect_uri}}'>
+    <input type = 'hidden'
+           name = 'scope'
+           value = 'https://www.googleapis.com/auth/userinfo.profile'>
+    <input type = 'hidden'
+           name = 'state'
+           value = '{{state}}'>
+    <input type='submit' value = 'Sign In'>
+	
+  <!--<button> <a href="">Click me</a></button>-->
+</form>
+  
+
+</body>
+</html>
